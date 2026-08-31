@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/fimog/Downloads/biozigh.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIOZIGH — Natural Oils &amp; Botanical Cosmetics 天然植物油与植物护肤品</title>
+<meta name="description" content="BIOZIGH — Algerian natural vegetable oils and botanical cosmetics for B2B distributors and importers. 阿尔及利亚天然植物油与植物护肤品，面向全球经销商与进口商。">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./BIOZIGH — Natural Oils &amp; Botanical Cosmetics 天然植物油与植物护肤品_files/css2" rel="stylesheet">
+<style>
+  :root{
+    --ink:#211D14;
+    --sand:#F4EDDC;
+    --sand-2:#ECE2C9;
+    --green:#26331F;
+    --green-2:#31432A;
+    --olive:#7C8A54;
+    --pear:#A9375F;
+    --pear-2:#C24C74;
+    --gold:#C69A44;
+    --line: rgba(33,29,20,0.14);
+    --line-lite: rgba(244,237,220,0.22);
+    --max: 720px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--sand);
+    color:var(--ink);
+    font-family:'Inter', 'Noto Sans SC', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  h1,h2,h3, .display{
+    font-family:'Fraunces','Noto Sans SC', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .cjk{ font-family:'Noto Sans SC', sans-serif; }
+  .zh{ color:inherit; opacity:0.82; }
+  p{ margin:0; }
+  a{ color:inherit; }
+  img,svg{ display:block; max-width:100%; }
+
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 22px; }
+
+  /* ---------- reduced motion ---------- */
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:40;
+    background:rgba(244,237,220,0.9);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:12px; padding-bottom:12px;
+  }
+  .brandmark{
+    display:flex; align-items:center; gap:9px;
+    font-family:'Fraunces', serif; font-weight:600; font-size:19px; letter-spacing:0.01em;
+  }
+  .brandmark .dot{
+    width:9px; height:9px; border-radius:50%;
+    background:var(--pear);
+    box-shadow:0 0 0 3px rgba(169,55,95,0.16);
+  }
+  .topbar .cta{
+    font-size:13px; font-weight:600;
+    padding:9px 16px;
+    border-radius:100px;
+    background:var(--green);
+    color:var(--sand);
+    text-decoration:none;
+    white-space:nowrap;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    background:var(--green);
+    color:var(--sand);
+    overflow:hidden;
+    padding:52px 0 46px;
+  }
+  .hero-art{
+    position:absolute; inset:0; opacity:0.55; pointer-events:none;
+  }
+  .hero .wrap{ position:relative; }
+  .eyebrow-plant{
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:22px;
+    opacity:0;
+    animation: rise .8s ease .05s forwards;
+  }
+  .eyebrow-plant svg{ width:26px; height:26px; }
+  .eyebrow-plant span{
+    font-size:12.5px; letter-spacing:0.04em; color:var(--sand); opacity:0.72;
+  }
+  .hero h1{
+    font-size:clamp(42px,11vw,60px);
+    line-height:0.98;
+    color:var(--sand);
+    opacity:0;
+    animation: rise .8s ease .12s forwards;
+  }
+  .hero .sub-en{
+    margin-top:14px;
+    font-family:'Fraunces', serif; font-weight:500;
+    font-size:clamp(18px,4.6vw,22px);
+    color:var(--sand);
+    opacity:0;
+    animation: rise .8s ease .2s forwards;
+  }
+  .hero .sub-zh{
+    margin-top:6px;
+    font-size:16px; font-weight:500; letter-spacing:0.02em;
+    color:var(--sand); opacity:0;
+    animation: rise .8s ease .27s forwards;
+  }
+  .hero .tagline{
+    margin-top:26px;
+    padding-top:22px;
+    border-top:1px solid var(--line-lite);
+    opacity:0;
+    animation: rise .8s ease .34s forwards;
+  }
+  .tagline-en{ font-size:13.5px; letter-spacing:0.06em; color:var(--gold); font-weight:600; }
+  .tagline-zh{ font-size:13.5px; letter-spacing:0.04em; color:var(--sand); opacity:0.75; margin-top:4px; }
+
+  .hero-ctas{
+    display:flex; gap:10px; margin-top:30px; flex-wrap:wrap;
+    opacity:0; animation: rise .8s ease .42s forwards;
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:13px 20px;
+    border-radius:100px;
+    font-size:14.5px; font-weight:600;
+    text-decoration:none;
+    border:1px solid transparent;
+    line-height:1.2;
+  }
+  .btn-primary{ background:var(--pear); color:#fff; }
+  .btn-ghost{ background:transparent; color:var(--sand); border-color:var(--line-lite); }
+  .btn small{ display:block; font-weight:500; font-size:11.5px; opacity:0.8; margin-top:2px; }
+
+  @keyframes rise{ from{ opacity:0; transform:translateY(14px);} to{ opacity:1; transform:translateY(0);} }
+
+  /* ---------- section shell ---------- */
+  section{ padding:56px 0; }
+  .eyebrow{
+    font-size:12px; font-weight:600; letter-spacing:0.05em;
+    color:var(--pear);
+    margin-bottom:10px;
+  }
+  .sec-head{ margin-bottom:30px; }
+  .sec-head h2{ font-size:clamp(26px,6vw,32px); }
+  .sec-head .h2-zh{ font-size:16px; margin-top:6px; font-weight:500; opacity:0.7; }
+
+  /* ---------- about ---------- */
+  .about-text{ font-size:16px; max-width:56ch; }
+  .about-text .en{ margin-bottom:14px; }
+  .about-text .zh{ font-size:15px; }
+  .about-stats{
+    display:grid; grid-template-columns:repeat(3,1fr);
+    gap:14px; margin-top:32px;
+  }
+  .stat{ border-top:1px solid var(--line); padding-top:12px; }
+  .stat .num{ font-family:'Fraunces',serif; font-size:22px; font-weight:600; color:var(--pear);}
+  .stat .lbl{ font-size:11.5px; margin-top:4px; line-height:1.35; opacity:0.75; }
+
+  /* ---------- products ---------- */
+  .products{ background:var(--green); color:var(--sand); }
+  .products .eyebrow{ color:var(--gold); }
+  .products .sec-head .h2-zh{ opacity:0.6; }
+  .p-card{
+    display:grid; grid-template-columns:112px 1fr;
+    gap:18px;
+    padding:22px 0;
+    border-top:1px solid var(--line-lite);
+  }
+  .p-card:last-child{ border-bottom:1px solid var(--line-lite); }
+  .p-art{
+    width:112px; height:148px;
+    border-radius:14px;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(244,237,220,0.06);
+  }
+  .p-art svg{ width:82px; height:120px; }
+  .p-name-en{ font-family:'Fraunces',serif; font-size:19px; font-weight:600; line-height:1.15; }
+  .p-latin{ font-size:12.5px; font-style:italic; opacity:0.6; margin-top:3px; }
+  .p-name-zh{ font-size:14.5px; font-weight:600; margin-top:6px; color:var(--gold); }
+  .p-desc-en{ font-size:13.5px; margin-top:10px; opacity:0.88; }
+  .p-desc-zh{ font-size:12.5px; margin-top:5px; opacity:0.62; }
+
+  /* ---------- b2b ---------- */
+  .b2b-list{ display:flex; flex-direction:column; gap:0; margin-top:6px; }
+  .b2b-item{
+    display:flex; gap:14px; align-items:flex-start;
+    padding:16px 0; border-top:1px solid var(--line);
+  }
+  .b2b-item:last-child{ border-bottom:1px solid var(--line); }
+  .b2b-item svg{ width:20px; height:20px; flex:none; margin-top:2px; color:var(--pear); }
+  .b2b-item .en{ font-size:15px; font-weight:500; }
+  .b2b-item .zh{ font-size:13px; margin-top:2px; opacity:0.65; }
+  .b2b-tagline{ margin-top:28px; }
+
+  /* ---------- quality ---------- */
+  .quality{
+    background:var(--sand-2);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .cert-card{
+    display:flex; align-items:center; gap:16px;
+    background:var(--ink);
+    color:var(--sand);
+    border-radius:18px;
+    padding:22px;
+  }
+  .cert-badge{ width:56px; height:56px; flex:none; border-radius: 50%; overflow:hidden; object-fit: cover }
+  .cert-badge-eu{ width:70px; height:56px; flex:none; border-radius: 5%; overflow:hidden; object-fit: cover }
+  .cert-name{ font-family:'Fraunces',serif; font-size:19px; font-weight:600; }
+  .cert-name-zh{ font-size:13px; margin-top:2px; opacity:0.65; }
+  .cert-verify{
+    margin-top:16px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:12px;
+    padding:13px 18px;
+    border-radius:100px;
+    background:var(--gold);
+    color:var(--ink);
+    text-decoration:none;
+    font-size:13.5px; font-weight:700;
+  }
+  .cert-verify svg{ width:15px; height:15px; flex:none; }
+
+  /* ---------- contact ---------- */
+  .contact{ background:var(--green); color:var(--sand); }
+  .contact .eyebrow{ color:var(--gold); }
+  .quote-panel{
+    background:var(--pear);
+    border-radius:20px;
+    padding:26px 24px;
+    margin-top:22px;
+  }
+  .quote-panel h3{ font-size:22px; color:#fff; }
+  .quote-panel .zh{ font-size:14px; margin-top:5px; color:rgba(255,255,255,0.85); }
+  .quote-panel .btn-primary{ background:var(--ink); margin-top:18px; }
+  .contact-chips{
+    display:flex; flex-direction:column; gap:10px; margin-top:22px;
+  }
+  .chip{
+    display:flex; align-items:center; gap:12px;
+    padding:14px 16px;
+    border:1px solid var(--line-lite);
+    border-radius:14px;
+    text-decoration:none;
+    color:var(--sand);
+  }
+  .chip svg{ width:19px; height:19px; flex:none; color:var(--gold); }
+  .chip .t1{ font-size:14.5px; font-weight:600; }
+  .chip .t2{ font-size:12px; opacity:0.6; margin-top:2px; }
+
+  footer{
+    padding:26px 0 40px;
+    text-align:center;
+    font-size:12px;
+    opacity:0.55;
+  }
+
+  @media(min-width:640px){
+    section{ padding:76px 0; }
+    .hero{ padding:76px 0 64px; }
+    .about-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:start; }
+    .p-card{ grid-template-columns:140px 1fr; }
+    .p-art{ width:140px; height:180px; }
+    .p-art svg{ width:100px; height:145px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brandmark"><span class="dot"></span>BIOZIGH</div>
+    <a class="cta" href="#contact">Get a quote 询价</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow-plant">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c0 5-3 6-3 10a3 3 0 0 0 6 0c0-4-3-5-3-10Z" stroke="currentColor" stroke-width="1.3"></path><path d="M12 13v8" stroke="currentColor" stroke-width="1.3"></path></svg>
+      <span>Algeria · 阿尔及利亚</span>
+    </div>
+    <h1>BIOZIGH</h1>
+    <p class="sub-en">Natural Oils &amp; Botanical Cosmetics</p>
+    <p class="sub-zh cjk">天然植物油与植物护肤品</p>
+    <div class="tagline">
+      <p class="tagline-en">PURE &nbsp;·&nbsp; NATURAL &nbsp;·&nbsp; COLD-PRESSED</p>
+      <p class="tagline-zh cjk">纯净 · 天然 · 冷压</p>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#contact">Request a quotation<small>索取报价</small></a>
+<a class="btn btn-ghost" href="#contact">Contact us<small>联系我们</small></a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow">About Biozigh · 关于我们</div>
+      <div class="sec-head">
+        <h2>Rooted in Algeria,<br>made for the world</h2>
+        <p class="h2-zh cjk">源自阿尔及利亚，服务全球市场</p>
+      </div>
+      <div class="about-text">
+        <p class="en">Biozigh is an Algerian company dedicated to natural vegetable oils and botanical cosmetics — quality raw materials for professionals, distributors, importers and international brands.</p>
+        <p class="zh cjk">碧奥兹（BIOZIGH）是一家专注于天然植物油和植物化妆品的阿尔及利亚企业，为专业买家、经销商、进口商及国际品牌提供优质原料与成品。</p>
+      </div>
+    </div>
+    <div class="about-stats">
+      <div class="stat"><div class="num">100%</div><div class="lbl">Cold-pressed<br><span class="cjk">冷压萃取</span></div></div>
+      <div class="stat"><div class="num">DZ</div><div class="lbl">Made in Algeria<br><span class="cjk">阿尔及利亚制造</span></div></div>
+      <div class="stat"><div class="num">B2B</div><div class="lbl">Wholesale ready<br><span class="cjk">支持批发合作</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="eyebrow">Our signature products · 明星产品</div>
+    <div class="sec-head">
+      <h2>Three oils,<br>one origin</h2>
+      <p class="h2-zh cjk">三款臻选产品，同一片土地</p>
+    </div>
+
+    <div class="p-card">
+      <div class="p-art">
+        <svg viewBox="0 0 100 145" fill="none">
+          <path d="M38 30h24v10l6 8v82a6 6 0 0 1-6 6H38a6 6 0 0 1-6-6V48l6-8V30Z" stroke="#F4EDDC" stroke-width="2"></path>
+          <path d="M34 22h32a4 4 0 0 1 4 4v4H30v-4a4 4 0 0 1 4-4Z" stroke="#F4EDDC" stroke-width="2"></path>
+          <rect x="40" y="18" width="20" height="8" rx="2" stroke="#F4EDDC" stroke-width="2"></rect>
+          <path d="M39 74c9-6 13-16 8-27" stroke="#C24C74" stroke-width="2" stroke-linecap="round"></path>
+          <ellipse cx="46" cy="47" rx="7" ry="11" transform="rotate(-18 46 47)" fill="#C24C74" fill-opacity="0.85"></ellipse>
+          <circle cx="44" cy="44" r="0.9" fill="#F4EDDC"></circle><circle cx="48" cy="49" r="0.9" fill="#F4EDDC"></circle><circle cx="43" cy="50" r="0.9" fill="#F4EDDC"></circle>
+        </svg>
+      </div>
+      <div>
+        <div class="p-name-en">Prickly Pear Seed Oil</div>
+        <div class="p-latin">Opuntia ficus-indica Seed Oil</div>
+        <div class="p-name-zh cjk">仙人掌果籽油</div>
+        <p class="p-desc-en">A precious oil obtained by cold-pressing prickly pear seeds — prized for its rarity and richness.</p>
+        <p class="p-desc-zh cjk">通过冷压工艺从仙人掌果实种子中萃取的珍贵油脂，因产量稀少、成分丰富而备受推崇。</p>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-art">
+        <svg viewBox="0 0 100 145" fill="none">
+          <path d="M38 30h24v10l6 8v82a6 6 0 0 1-6 6H38a6 6 0 0 1-6-6V48l6-8V30Z" stroke="#F4EDDC" stroke-width="2"></path>
+          <path d="M34 22h32a4 4 0 0 1 4 4v4H30v-4a4 4 0 0 1 4-4Z" stroke="#F4EDDC" stroke-width="2"></path>
+          <rect x="40" y="18" width="20" height="8" rx="2" stroke="#F4EDDC" stroke-width="2"></rect>
+          <path d="M50 44v34" stroke="#7C8A54" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M50 50c-8-2-12 4-12 4s6 6 12 2" fill="#7C8A54" fill-opacity="0.85"></path>
+          <path d="M50 50c8-2 12 4 12 4s-6 6-12 2" fill="#7C8A54" fill-opacity="0.85"></path>
+          <path d="M50 62c-7-1-10 4-10 4s5 5 10 2" fill="#7C8A54" fill-opacity="0.65"></path>
+          <path d="M50 62c7-1 10 4 10 4s-5 5-10 2" fill="#7C8A54" fill-opacity="0.65"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="p-name-en">Pistacia Lentiscus Oil</div>
+        <div class="p-latin">Pistacia Lentiscus Oil</div>
+        <div class="p-name-zh cjk">乳香黄连木植物油</div>
+        <p class="p-desc-en">A botanical vegetable oil native to Algeria, cold-pressed for a purer, more active extract.</p>
+        <p class="p-desc-zh cjk">原产于阿尔及利亚的植物油，采用冷压工艺萃取，保留更纯净、更具活性的成分。</p>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-art">
+        <svg viewBox="0 0 100 145" fill="none">
+          <path d="M32 50h36v52a10 10 0 0 1-10 10H42a10 10 0 0 1-10-10V50Z" stroke="#F4EDDC" stroke-width="2"></path>
+          <path d="M30 40h40a2 2 0 0 1 2 2v8H28v-8a2 2 0 0 1 2-2Z" stroke="#F4EDDC" stroke-width="2"></path>
+          <rect x="42" y="30" width="16" height="12" rx="2" stroke="#F4EDDC" stroke-width="2"></rect>
+          <circle cx="42" cy="68" r="2" fill="#C69A44"></circle><circle cx="53" cy="64" r="2" fill="#C69A44"></circle><circle cx="60" cy="74" r="2" fill="#C69A44"></circle>
+          <circle cx="46" cy="80" r="2" fill="#C69A44"></circle><circle cx="58" cy="88" r="2" fill="#C69A44"></circle><circle cx="40" cy="94" r="2" fill="#C69A44"></circle>
+          <circle cx="52" cy="98" r="2" fill="#C69A44"></circle><circle cx="62" cy="60" r="2" fill="#C69A44"></circle><circle cx="36" cy="60" r="2" fill="#C69A44"></circle>
+        </svg>
+      </div>
+      <div>
+        <div class="p-name-en">Prickly Pear Seed Powder Scrub</div>
+        <div class="p-latin">Body &amp; face exfoliant</div>
+        <div class="p-name-zh cjk">梨果仙人掌籽粉磨砂膏</div>
+        <p class="p-desc-en">A natural scrub formulated with prickly pear seed powder for gentle, effective exfoliation.</p>
+        <p class="p-desc-zh cjk">采用仙人掌籽粉配制而成的天然磨砂产品，温和有效地去除角质。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="b2b">
+  <div class="wrap">
+    <div class="eyebrow">B2B cooperation · 商务合作</div>
+    <div class="sec-head">
+      <h2>Wholesale, bulk<br>&amp; distribution</h2>
+      <p class="h2-zh cjk">批发 · 散装供应 · 分销合作</p>
+    </div>
+    <div class="b2b-list">
+      <div class="b2b-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+        <div><div class="en">Wholesale sales</div><div class="zh cjk">批发销售</div></div>
+      </div>
+      <div class="b2b-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 8l8-4 8 4-8 4-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M4 8v8l8 4 8-4V8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+        <div><div class="en">Bulk oil supply</div><div class="zh cjk">散装原油供应</div></div>
+      </div>
+      <div class="b2b-item">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17" cy="8" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M3 20c0-3.5 2.5-6 5-6s5 2.5 5 6M12 20c0-3.5 2.3-6 5-6s5 2.5 5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+        <div><div class="en">Cooperation with importers &amp; distributors</div><div class="zh cjk">与进口商和经销商合作</div></div>
+      </div>
+      <div class="b2b-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+        <div><div class="en">Private-label solutions for cosmetic brands</div><div class="zh cjk">为化妆品品牌提供贴牌定制方案</div></div>
+      </div>
+      <div class="b2b-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+        <div><div class="en">Product documentation available on request</div><div class="zh cjk">可应要求提供产品资料文档</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quality" id="quality">
+  <div class="wrap">
+    <div class="eyebrow">Quality &amp; certification · 品质与认证</div>
+    <div class="cert-card">
+      <img class="cert-badge" src="assets/Bio-Cert_logo.jpeg" alt="Certification Badge">
+      <img class="cert-badge-eu" src="assets/Bio-EU_logo.jpeg" alt="Certification Badge">
+        <circle cx="28" cy="28" r="26" stroke="#C69A44" stroke-width="2"></circle>
+        <path d="M18 29l7 7 13-15" stroke="#C69A44" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+      <div>
+        <div class="cert-name">BIOCERT Certification</div>
+        <div class="cert-name-zh cjk">BIOCERT 认证</div>
+      </div>
+    </div>
+    <a class="cert-verify" href="https://global.ofcc.org.cn/" target="_blank" rel="noopener">
+      <span>Verify BIOCERT certification 验证BIOCERT认证</span>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact · 联系方式</div>
+    <div class="sec-head">
+      <h2>Let's work<br>together</h2>
+      <p class="h2-zh cjk">期待与您携手合作</p>
+    </div>
+
+    <div class="quote-panel">
+      <h3>Request a quotation</h3>
+      <p class="zh cjk">索取报价</p>
+      <!-- EDIT: replace the mailto address below with the real sales inbox -->
+      <a class="btn btn-primary" href="mailto:contact@biozigh.com?subject=Quotation%20Request%20%E2%80%94%20BIOZIGH">Send a request<small>发送询价请求</small></a>
+    </div>
+
+    <div class="contact-chips">
+      <!-- EDIT: replace 213XXXXXXXXX with the real WhatsApp number, no + or spaces -->
+      <a class="chip" href="https://wa.me/213770165456" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.7-6.7L20 4l-1 3.5A7.96 7.96 0 0 1 20 12Z" stroke="currentColor" stroke-width="1.6"></path><path d="M9 9.5c0 3.5 2 5.5 5.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+        <div><div class="t1">WhatsApp</div><div class="t2">Chat with our team · 与我们对话</div></div>
+      </a>
+      <!-- EDIT: replace with the real business email -->
+      <a class="chip" href="mailto:contact@biozigh.com">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"></path><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6"></path></svg>
+        <div><div class="t1">Email</div><div class="t2">contact@biozigh.com</div></div>
+      </a>
+      <!-- EDIT: replace with the real WeChat ID -->
+      <div class="chip" style="cursor:default;">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="10" r="5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17" cy="15" r="4" stroke="currentColor" stroke-width="1.6"></circle></svg>
+        <div><div class="t1">WeChat</div><div class="t2 cjk">微信：wxid_i03z3lkzypr522</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  BIOZIGH — Algeria · 阿尔及利亚 &nbsp;·&nbsp; © 2026
+</footer>
+
+
+
+</body></html>
