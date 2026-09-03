@@ -270,6 +270,59 @@
   .chip .t1{ font-size:14.5px; font-weight:600; }
   .chip .t2{ font-size:12px; opacity:0.6; margin-top:2px; }
 
+    /* Button reset for chip */
+  .chip-btn {
+      width: 100%;
+      background: transparent;
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+      border: 1px solid var(--line-lite);
+    }
+    .chip-btn:hover { background: rgba(244,237,220,0.05); }
+
+    /* Modal Overlay & Card */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-card {
+      position: relative;
+      background: var(--sand);
+      color: var(--ink);
+      padding: 28px 24px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 280px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px; right: 14px;
+      background: none; border: none;
+      font-size: 24px; cursor: pointer;
+      color: var(--ink); opacity: 0.6;
+    }
+    .modal-close:hover { opacity: 1; }
+    .qr-img {
+      width: 180px; height: 180px;
+      margin: 0 auto 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      object-fit: contain;
+    }
+    .qr-title { font-family: 'Fraunces', serif; font-weight: 600; font-size: 17px; }
+    .qr-sub { font-size: 13px; opacity: 0.7; margin-top: 2px; }
+
   footer{
     padding:26px 0 40px;
     text-align:center;
@@ -465,10 +518,25 @@
         <div><div class="t1">Email</div><div class="t2">contact@biozigh.com</div></div>
       </a>
      
-      <div class="chip" style="cursor:default;">
-        <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="10" r="5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17" cy="15" r="4" stroke="currentColor" stroke-width="1.6"></circle></svg>
-        <div><div class="t1">WeChat</div><div class="t2 cjk">微信：wxid_i03z3lkzypr522</div></div>
-      </div>
+      <button type="button" class="chip chip-btn" onclick="openWeChatModal()">
+        <svg viewBox="0 0 24 24" fill="none">
+          <circle cx="9" cy="10" r="5" stroke="currentColor" stroke-width="1.6"></circle>
+          <circle cx="17" cy="15" r="4" stroke="currentColor" stroke-width="1.6"></circle>
+        </svg>
+        <div>
+          <div class="t1">WeChat</div>
+          <div class="t2 cjk">Scan QR Code · 扫描二维码</div>
+        </div>
+      </button>
+      
+      <!-- WeChat QR Code Modal -->
+      <div id="wechat-modal" class="modal-overlay" onclick="closeWeChatModal(event)">
+        <div class="modal-card">
+          <button class="modal-close" onclick="closeWeChatModal(event)" aria-label="Close">&times;</button>
+          <img src="assets/wechat-qr.png" alt="WeChat QR Code" class="qr-img">
+          <div class="qr-title">Scan on WeChat</div>
+          <div class="qr-sub cjk">微信扫一扫添加好友</div>
+        </div>
     </div>
   </div>
 </section>
@@ -476,6 +544,17 @@
 <footer>
   BIOZIGH — Algeria · 阿尔及利亚 &nbsp;·&nbsp; © 2026
 </footer>
+
+  <script>
+  function openWeChatModal() {
+    document.getElementById('wechat-modal').classList.add('active');
+  }
+  function closeWeChatModal(e) {
+    if (e.target === e.currentTarget || e.target.classList.contains('modal-close')) {
+      document.getElementById('wechat-modal').classList.remove('active');
+    }
+  }
+</script>
 
 
 
